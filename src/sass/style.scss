@@ -1,0 +1,33 @@
+@use "sass:math";
+
+
+// 基本變數定義
+@import "base/base";
+
+//mix規範
+@import "mixin/mixin";
+
+@import "component/component";
+
+@import "page/page";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+body{
+    font-family:"Noto Sans TC";
+    line-height: 1.6;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+  }
+
+  .fuild_wrapper{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .wrapper{
+    margin:0 auto;
+    max-width: 1400px;
+  }

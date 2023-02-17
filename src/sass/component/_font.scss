@@ -1,0 +1,24 @@
+//字重
+.font_bold{
+    @include font(bold);
+  }
+  .font_med{
+    @include font(medium);
+  }
+  .font_light{
+    @include font(light);
+  }
+
+
+//字級
+  @each $k, $v in $font_size{
+    #{$k}{
+        font-size: $v;
+        letter-spacing: $v * 0.02;
+    }
+  }
+
+  //字型
+  .font_family_all{
+    font-family: $font_family_c;
+  }

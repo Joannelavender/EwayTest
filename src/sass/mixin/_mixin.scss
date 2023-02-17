@@ -1,0 +1,27 @@
+
+// 768px
+@mixin pad(){
+    @media all and (max-width: $l_breakpoint){
+        @content;
+    }
+}
+
+// 428px
+@mixin mobile(){
+    @media all and (max-width: $m_breakpoint){
+        @content;
+    }
+
+}
+
+
+// font weight 
+@mixin font($size){
+    @if $size == bold {
+        font-weight: 700;
+    }@else if $size == medium {
+        font-weight: 400;
+    }@else if $size == light {
+        font-weight: 100;
+    }
+}
